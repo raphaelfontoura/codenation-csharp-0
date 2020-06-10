@@ -29,7 +29,7 @@ namespace Codenation.Challenge
             return false;
         }
 
-        public static int Fibonacci(int number)
+        private static int Fibonacci(int number)
         {
             return (number == 0 || number == 1) ? number : Fibonacci(number-1) + Fibonacci(number-2);
         }
