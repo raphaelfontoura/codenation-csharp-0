@@ -20,11 +20,9 @@ namespace Codenation.Challenge
 
         public bool IsFibonacci(int numberToTest)
         {
-            int i = 0;
-            while (Fibonacci(i) <= numberToTest)
+            for(int i = 0; Fibonacci(i) <= numberToTest; i++)
             {
                 if (Fibonacci(i) == numberToTest) return true;
-                i++;
             }
             return false;
         }
