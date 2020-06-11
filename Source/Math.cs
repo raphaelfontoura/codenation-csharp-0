@@ -8,12 +8,9 @@ namespace Codenation.Challenge
         public List<int> Fibonacci()
         {
             List<int> fibonnaciNumbers = new List<int> { 0, 1 };
-            int cont = 1;
-            int fibNumber;
-            while ((fibNumber = fibonnaciNumbers[cont] + fibonnaciNumbers[cont - 1]) <= limite)
+            for (int n = 2; Fibonacci(n) <= limite; n++)
             {
-                fibonnaciNumbers.Add(fibNumber);
-                cont++;
+                fibonnaciNumbers.Add(Fibonacci(n));
             }
             return fibonnaciNumbers;
         }
